@@ -17,13 +17,13 @@ export const Button = ({
 }) => {
   // to check if a button on the pages has a buttonstyle. if so, buttonStyle, if not, btn--primary
   const checkButtonStyle = STYLES.includes(buttonStyle) ? 
-  buttonStyle : STYLES[0]
+  buttonStyle : STYLES[0];
 
   const checkButtonSize = SIZES.includes(buttonStyle) ? 
-  buttonSize : SIZES[0]
+  buttonSize : SIZES[0];
 
   const checkButtonColor = COLOR.includes(buttonStyle) ? 
-  buttonColor : COLOR[0]
+  buttonColor : null;
 
   return (
   <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} 
